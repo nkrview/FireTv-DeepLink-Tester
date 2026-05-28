@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Deeplink Launcher</string>
+    <string name="app_title">Deeplink Launcher (3rd party)</string>
+    <string name="open_url">Open URL</string>
+    <string name="edit_url">Edit</string>
+    <string name="reload_feed">Reload feed</string>
+    <string name="url_hint">viewlift://amazonfiretv?…</string>
+    <string name="dialog_confirm">Done</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="error_empty_url">Please enter a URL</string>
+    <string name="edit_dialog_title">Edit: %1$s</string>
+    <string name="edit_dialog_message">Update the firetvUrl used when opening this feed item.</string>
+    <string name="edit_reset">Reset to feed</string>
+    <string name="edit_saved">Deeplink updated</string>
+    <string name="edit_reset_done">Restored feed URL</string>
+    <string name="feed_loading">Loading feed…</string>
+    <string name="feed_loaded_count">%1$d deeplinks loaded</string>
+    <string name="feed_error_http">Feed error %1$d: %2$s</string>
+    <string name="feed_error_parse">Could not parse feed: %1$s</string>
+    <string name="feed_error_network">Network error: %1$s</string>
+    <string name="feed_error_unknown">Failed to load feed</string>
+    <string name="feed_config_missing">Feed config missing. Set `feed_auth_username`, `feed_auth_password`, and `feeds_url` in strings.xml.</string>
+    <string name="forward_prod_missing">No app on device handles this deeplink</string>
+    <string name="feed_auth_username"></string>
+    <string name="feed_auth_password"></string>
+    <string name="feeds_url"></string>
+</resources>

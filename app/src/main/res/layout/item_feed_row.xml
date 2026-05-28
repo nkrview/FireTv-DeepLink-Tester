@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/selector_tv_focusable_panel"
+    android:focusable="false"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/feedTitle"
+        style="@style/Widget.FireTv.FocusableText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:textColor="@color/selector_tv_text"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/openButton"
+            style="@style/Widget.FireTv.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="200dp"
+            android:text="@string/open_url" />
+
+        <Button
+            android:id="@+id/editButton"
+            style="@style/Widget.FireTv.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:minWidth="200dp"
+            android:text="@string/edit_url" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/feedUrlPreview"
+        style="@style/Widget.FireTv.FocusableText.Secondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:padding="12dp"
+        android:textIsSelectable="true"
+        android:textSize="13sp" />
+
+</LinearLayout>
