@@ -5,7 +5,7 @@
     <string name="open_url">Open URL</string>
     <string name="edit_url">Edit</string>
     <string name="reload_feed">Reload feed</string>
-    <string name="url_hint">viewlift://amazonfiretv?…</string>
+    <string name="url_hint">demo://amazonfiretv?…</string>
     <string name="dialog_confirm">Done</string>
     <string name="dialog_cancel">Cancel</string>
     <string name="error_empty_url">Please enter a URL</string>

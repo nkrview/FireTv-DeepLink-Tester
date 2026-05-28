@@ -16,13 +16,13 @@
             <action android:name="android.intent.action.VIEW" />
             <data
                 android:host="amazonfiretv"
-                android:scheme="viewlift" />
+                android:scheme="demo" />
         </intent>
         <intent>
             <action android:name="android.intent.action.VIEW" />
             <data
                 android:host="amazonfiretv"
-                android:scheme="spinco" />
+                android:scheme="anotherdemo" />
         </intent>
     </queries>
 

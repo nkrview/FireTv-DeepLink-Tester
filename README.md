@@ -1,6 +1,6 @@
 # Fire TV Deeplink Launcher
 
-Third-party Fire TV app that loads deeplinks from a Viewlift feeds API and opens them in your production app (simulates an external partner app).
+Third-party Fire TV app that loads deeplinks from a demo feeds API and opens them in your production app (simulates an external partner app).
 
 **Package:** `com.firetv.deeplinktester`
 
@@ -65,7 +65,7 @@ Example:
       "airings": [
         {
           "links": {
-            "firetvUrl": "spinco://amazonfiretv?deep_link_value=/game/...&p=com.example.app"
+            "firetvUrl": "demo://amazonfiretv?deep_link_value=/game/...&p=com.example.app"
           }
         }
       ]

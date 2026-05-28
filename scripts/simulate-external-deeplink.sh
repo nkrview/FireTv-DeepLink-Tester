@@ -4,11 +4,11 @@
 
 set -euo pipefail
 
-DEEPLINK='viewlift://amazonfiretv?asin=B011111111&s=utm_source=NBA&utm_medium=SchedulePage&utm_campaign=NBA_affiliate_2025&utm_id=affiliate&af_xp=custom&pid=nba&c=NBA%20attribution&deep_link_value=/game/12/17-at-8pm---cleveland-cavaliers-vs-chicago-bulls-1755506603&p=com.usanetwork.watcher'
+DEEPLINK='demo://amazonfiretv?asin=B011111111&s=utm_source=NBA&utm_medium=SchedulePage&utm_campaign=NBA_affiliate_2025&utm_id=affiliate&af_xp=custom&pid=nba&c=NBA%20attribution&deep_link_value=/game/12/17-at-8pm---cleveland-cavaliers-vs-chicago-bulls-1755506603&p=com.example.demoapp'
 
-# Target: production Viewlift Fire TV app (change package if your flavor differs)
-PROD_PACKAGE="${PROD_PACKAGE:-com.usanetwork.watcher}"
-PROD_ACTIVITY="${PROD_ACTIVITY:-com.viewlift.presentation.HomeActivity}"
+# Target: production demo Fire TV app (change package if your flavor differs)
+PROD_PACKAGE="${PROD_PACKAGE:-com.example.demoapp}"
+PROD_ACTIVITY="${PROD_ACTIVITY:-com.example.demoapp.MainActivity}"
 
 # Target: this Deeplink Tester app (displays full received URI on screen)
 TESTER_PACKAGE="com.firetv.deeplinktester"
@@ -23,7 +23,7 @@ case "$TARGET" in
     adb shell 'am start -W -a android.intent.action.VIEW -d "'"$DEEPLINK"'" '"$PROD_PACKAGE"'/'"$PROD_ACTIVITY"
     ;;
   tester|test)
-    echo "Launching Deeplink Tester (viewlift scheme): $TESTER_PACKAGE"
+    echo "Launching Deeplink Tester (demo scheme): $TESTER_PACKAGE"
     adb shell 'am start -W -a android.intent.action.VIEW -d "'"$DEEPLINK"'" '"$TESTER_PACKAGE"'/'"$TESTER_ACTIVITY"
     ;;
   *)
